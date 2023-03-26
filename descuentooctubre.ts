@@ -7,6 +7,6 @@ let subtotal : number = (cantidadProducto*precioUnitario);
 let valorDescuento: number = (subtotal* 0.15);
 let precioFinal : number= (subtotal-valorDescuento)
 
-if (mes == mesDescuento) {console.log("Por ser nuestro mes de aniversario su compra tiene un descuento de:$",valorDescuento, "\n su precio final es de:" ,precioFinal);
-} else {console.log("su compra es de:$ ", subtotal);
+if (mes == mesDescuento) {console.log("El cliente obtiene descuento","\n su compra final es de:" ,precioFinal);
+} else {console.log("el cliente no obtiene descuento", "\n su compra es de:$ ", subtotal);
 }
