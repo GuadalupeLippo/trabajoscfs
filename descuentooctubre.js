@@ -9,8 +9,8 @@ var subtotal = (cantidadProducto * precioUnitario);
 var valorDescuento = (subtotal * 0.15);
 var precioFinal = (subtotal - valorDescuento);
 if (mes == mesDescuento) {
-    console.log("El cliente obtiene descuento", "\n su compra final es de:", precioFinal);
+    console.log("¡Usted obtiene descuento por ser nuestro mes de aniversario!", "\n su compra final es de:", precioFinal);
 }
 else {
-    console.log("el cliente no obtiene descuento", "\n su compra es de:$ ", subtotal);
+    console.log("su compra es de:$ ", subtotal);
 }
