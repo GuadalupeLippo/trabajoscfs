@@ -9,9 +9,15 @@ let sueldoFinalcon10aum : number = (sueldo + sueldoCon10Aum);
 let sueldoFinalcon5aum : number = (sueldo + sueldoCon5Aum);
 
 
-if (sueldo <= 15000) {console.log("usted tiene un aumento de:$",sueldoCon20Aum, "\n Su sueldo neto es de: $",sueldoFinalcon20aum );
+if (sueldo <= 15000) {
+    console.log("usted tiene un aumento de:$",sueldoCon20Aum, "\n Su sueldo neto es de: $",sueldoFinalcon20aum );
 } 
-else if (sueldo>15000 && sueldo<=20000) {console.log("usted tiene un aumento de:$",sueldoCon10Aum, "\n Su sueldo neto es de:$", sueldoFinalcon10aum );}
-else if (sueldo>20000 && sueldo<=25000) {console.log("usted tiene un aumento de:$",sueldoCon5Aum, "\n Su sueldo neto es de:$", sueldoFinalcon5aum);
-} else {console.log("su sueldo neto es de:$", sueldo);
+else 
+    if (sueldo>15000 && sueldo<=20000) {
+    console.log("usted tiene un aumento de:$",sueldoCon10Aum, "\n Su sueldo neto es de:$", sueldoFinalcon10aum );}
+else 
+    if (sueldo>20000 && sueldo<=25000) {
+    console.log("usted tiene un aumento de:$",sueldoCon5Aum, "\n Su sueldo neto es de:$", sueldoFinalcon5aum);
+} else {
+    console.log("su sueldo neto es de:$", sueldo);
 }
