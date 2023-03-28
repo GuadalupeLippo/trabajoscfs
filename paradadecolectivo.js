@@ -6,5 +6,12 @@ var llegoElColectivo = rls.question("¿esta viniendo el colectivo?");
 while (llegoElColectivo == "N") {
     console.log("sigo esperando el colectivo");
     llegoElColectivo = rls.question("¿ya vino el colectivo");
+    if (llegoElColectivo == "S") {
+        console.log("llego el colectivo");
+    }
+    else {
+        console.log("ingrese una respuesta valida");
+        llegoElColectivo = rls.question("¿cual es tu nueva respuesta?");
+    }
 }
-console.log("llego el colectivo");
+;
